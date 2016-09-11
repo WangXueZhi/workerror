@@ -1,0 +1,23 @@
+@import "../css/normalize.css";
+@import 'common.scss';
+
+html,body{
+  background-color: #ffffff;
+}
+
+#content{
+  #Main{
+    .logo{
+      left: 20px;
+      top: 20px;
+
+      p{
+        font-size: 15px;
+
+        span{
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,134 @@
+@import 'common.less';
+
+.itemHead{
+  margin: 40px 0;
+
+  .itemHead-content{
+    border: 1px solid #c3c2c2;
+    padding: 20px;
+    text-align: justify;
+    line-height: 25px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+  }
+
+  .companyItem-liuyan{
+    vertical-align: middle;
+  }
+  .companyItem-time{
+    vertical-align: middle;
+  }
+  .companyItem-zan{
+    vertical-align: middle;
+  }
+
+  .companyItem-info{
+    display: inline-block;
+    float:right;
+    margin-right: 10px;
+
+    &.companyItem-time{
+      margin-right: 0;
+    }
+
+    span{
+      vertical-align: middle;
+      margin-left: 5px;
+      color: #457da1;
+      font-size: 15px;
+    }
+  }
+
+  //公司详情页－公司头
+  .companyHead{
+    height: 22px;
+    margin-bottom:20px;
+
+    &>p{
+      float: left;
+      height: 22px;
+      line-height: 22px;
+      margin: 0 auto;
+      margin-left: 50px;
+      color: #7f7f7f;
+      font-size: 14px;
+
+      &:first-child{
+        margin-left: 0;
+        color: #4c4c4c;
+        font-size: 18px;
+      }
+
+      @media screen and (max-width: 620px) {
+          &:nth-child(2) {
+              display: none;
+          }
+      }
+
+      @media screen and (max-width: 490px) {
+          // &:nth-child(3) {
+          //     display: none;
+          // }
+          &:first-child {
+            width:72%;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            font-size: 18px;
+          }
+      }
+
+      @media screen and (max-width: 320px) {
+          &:nth-child(3) {
+              display: none;
+          }
+      }
+    }
+  }
+}
+
+.itemMessage{
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+
+  .itemMessage-content{
+    margin: 0;
+    margin-top: 10px;
+    color: #4c4c4c;
+    font-size: 16px;
+  }
+
+  .itemMessage-userHead {
+      width: 34px;
+      height: 34px;
+      overflow: hidden;
+      border-radius: 50%;
+      position: relative;
+      vertical-align: middle;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      &.sexMan{
+          background-image: url(../img/head-default.png);
+      }
+
+      &.sexWoman{
+          background-image: url(../img/head-default.png);
+      }
+  }
+  .itemMessage-ele{
+    display: inline-block;
+    vertical-align: middle;
+
+    &.itemMessage-userName{
+      color: #4c4c4c;
+      font-size: 18px;
+      height: 34px;
+      line-height: 34px;
+      margin-left: 10px;
+    }
+  }
+}

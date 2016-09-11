@@ -1,0 +1,46 @@
+@import 'common.less';
+
+.itemMessage{
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+
+  .itemMessage-content{
+    margin: 0;
+    margin-top: 10px;
+    color: #4c4c4c;
+    font-size: 16px;
+  }
+
+  .itemMessage-userHead {
+      width: 34px;
+      height: 34px;
+      overflow: hidden;
+      border-radius: 50%;
+      position: relative;
+      vertical-align: middle;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      &.sexMan{
+          background-image: url(../img/head-default.png);
+      }
+
+      &.sexWoman{
+          background-image: url(../img/head-default.png);
+      }
+  }
+  .itemMessage-ele{
+    display: inline-block;
+    vertical-align: middle;
+
+    &.itemMessage-userName{
+      color: #4c4c4c;
+      font-size: 18px;
+      height: 34px;
+      line-height: 34px;
+      margin-left: 10px;
+    }
+  }
+}
